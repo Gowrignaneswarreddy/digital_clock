@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif; /* Elegant serif font */
+  background: linear-gradient(135deg, #f0e6f6, #c8e3f3); /* Soft pastel gradient */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.clock-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px 60px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0; /* Subtle border for a refined look */
+}
+
+.clock {
+  font-size: 50px;
+  font-weight: 400;
+  color: #444444; /* Dark gray for a sophisticated look */
+  text-align: center;
+  font-family: 'Lora', serif; /* Elegant and modern serif font */
+  letter-spacing: 2px; /* Slight spacing for better readability */
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.8),
+    0 2px 2px rgba(200, 200, 200, 0.6); /* Gentle shadow for a polished effect */
+}
+
+/* Subtle fade-in animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.clock-container {
+  animation: fade-in 1.5s ease-in-out;
+}
